@@ -8,5 +8,5 @@ Winear is a small project to study clean architecture and (in the future) ARKit
 
 # How to run:
 
-Just open the project file on Xcode and hit Play button
+Just clone the repo, open the project file on Xcode and hit Play button
 
