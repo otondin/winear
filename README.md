@@ -1,5 +1,5 @@
 # About
-Winear is a small project to study clean architecture and (in the future) ARKit
+Winear is an working-in-progress small project aimed to study clean architecture and (in the future) ARKit.
 
 # Requirements:
 
