@@ -1,0 +1,906 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B1365D1C266244CB007ECEDC /* TastingWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1365D1B266244CB007ECEDC /* TastingWorker.swift */; };
+		B1365D1F26626969007ECEDC /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1365D1E26626969007ECEDC /* Coordinator.swift */; };
+		B1365D222662709C007ECEDC /* TastingDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1365D212662709C007ECEDC /* TastingDetailsViewController.swift */; };
+		B172251B2677DF8D00914EB2 /* TastingViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B172251A2677DF8D00914EB2 /* TastingViewCell.swift */; };
+		B172252A26788EB000914EB2 /* WinearDataSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B172252126788EB000914EB2 /* WinearDataSource.framework */; };
+		B172253126788EB000914EB2 /* WinearDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B172253026788EB000914EB2 /* WinearDataSourceTests.swift */; };
+		B172253326788EB000914EB2 /* WinearDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = B172252326788EB000914EB2 /* WinearDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B172253626788EB000914EB2 /* WinearDataSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B172252126788EB000914EB2 /* WinearDataSource.framework */; };
+		B172253726788EB000914EB2 /* WinearDataSource.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B172252126788EB000914EB2 /* WinearDataSource.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B172254326788EDE00914EB2 /* TastingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B172254226788EDE00914EB2 /* TastingService.swift */; };
+		B172254526788F6100914EB2 /* TastingDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B172254426788F6100914EB2 /* TastingDTO.swift */; };
+		B192E10D265D93B000E254FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B192E10C265D93B000E254FF /* AppDelegate.swift */; };
+		B192E10F265D93B000E254FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B192E10E265D93B000E254FF /* SceneDelegate.swift */; };
+		B192E114265D93B000E254FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B192E112265D93B000E254FF /* Main.storyboard */; };
+		B192E116265D93B100E254FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B192E115265D93B100E254FF /* Assets.xcassets */; };
+		B192E119265D93B100E254FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B192E117265D93B100E254FF /* LaunchScreen.storyboard */; };
+		B192E124265D93B100E254FF /* WinearTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B192E123265D93B100E254FF /* WinearTests.swift */; };
+		B192E14C265D944500E254FF /* TastingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B192E14B265D944500E254FF /* TastingViewController.swift */; };
+		B192E15B265D9C4E00E254FF /* TastingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B192E15A265D9C4E00E254FF /* TastingInteractor.swift */; };
+		B192E15D265D9D2D00E254FF /* TastingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B192E15C265D9D2D00E254FF /* TastingPresenter.swift */; };
+		B192E15F265D9E3700E254FF /* TastingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B192E15E265D9E3700E254FF /* TastingViewModel.swift */; };
+		B192E161265DA1DA00E254FF /* TastingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B192E160265DA1DA00E254FF /* TastingRouter.swift */; };
+		B192E16B265E321C00E254FF /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B192E16A265E321C00E254FF /* MainCoordinator.swift */; };
+		B192E16D265E335000E254FF /* DependenciesEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B192E16C265E335000E254FF /* DependenciesEngine.swift */; };
+		B1B17EB22666ECB300E19AE5 /* NewTastingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B17EB12666ECB300E19AE5 /* NewTastingViewController.swift */; };
+		B1B17EB42666ECBB00E19AE5 /* NewTastingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B17EB32666ECBB00E19AE5 /* NewTastingPresenter.swift */; };
+		B1B17EB62666ECCD00E19AE5 /* NewTastingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B17EB52666ECCD00E19AE5 /* NewTastingInteractor.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B172252B26788EB000914EB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B192E101265D93B000E254FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B172252026788EB000914EB2;
+			remoteInfo = WinearDataSource;
+		};
+		B172252D26788EB000914EB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B192E101265D93B000E254FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B192E108265D93B000E254FF;
+			remoteInfo = Winear;
+		};
+		B172253426788EB000914EB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B192E101265D93B000E254FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B172252026788EB000914EB2;
+			remoteInfo = WinearDataSource;
+		};
+		B192E120265D93B100E254FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B192E101265D93B000E254FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B192E108265D93B000E254FF;
+			remoteInfo = Winear;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B172253826788EB000914EB2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B172253726788EB000914EB2 /* WinearDataSource.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B1365D1B266244CB007ECEDC /* TastingWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastingWorker.swift; sourceTree = "<group>"; };
+		B1365D1D26624DC1007ECEDC /* Winear.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Winear.entitlements; sourceTree = "<group>"; };
+		B1365D1E26626969007ECEDC /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		B1365D212662709C007ECEDC /* TastingDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastingDetailsViewController.swift; sourceTree = "<group>"; };
+		B172251A2677DF8D00914EB2 /* TastingViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastingViewCell.swift; sourceTree = "<group>"; };
+		B172252126788EB000914EB2 /* WinearDataSource.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WinearDataSource.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B172252326788EB000914EB2 /* WinearDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WinearDataSource.h; sourceTree = "<group>"; };
+		B172252426788EB000914EB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B172252926788EB000914EB2 /* WinearDataSourceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WinearDataSourceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B172253026788EB000914EB2 /* WinearDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinearDataSourceTests.swift; sourceTree = "<group>"; };
+		B172253226788EB000914EB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B172254226788EDE00914EB2 /* TastingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastingService.swift; sourceTree = "<group>"; };
+		B172254426788F6100914EB2 /* TastingDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastingDTO.swift; sourceTree = "<group>"; };
+		B192E109265D93B000E254FF /* Winear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Winear.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B192E10C265D93B000E254FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B192E10E265D93B000E254FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B192E113265D93B000E254FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B192E115265D93B100E254FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B192E118265D93B100E254FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B192E11A265D93B100E254FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B192E11F265D93B100E254FF /* WinearTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WinearTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B192E123265D93B100E254FF /* WinearTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinearTests.swift; sourceTree = "<group>"; };
+		B192E125265D93B100E254FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B192E14B265D944500E254FF /* TastingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastingViewController.swift; sourceTree = "<group>"; };
+		B192E15A265D9C4E00E254FF /* TastingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastingInteractor.swift; sourceTree = "<group>"; };
+		B192E15C265D9D2D00E254FF /* TastingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastingPresenter.swift; sourceTree = "<group>"; };
+		B192E15E265D9E3700E254FF /* TastingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastingViewModel.swift; sourceTree = "<group>"; };
+		B192E160265DA1DA00E254FF /* TastingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastingRouter.swift; sourceTree = "<group>"; };
+		B192E16A265E321C00E254FF /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		B192E16C265E335000E254FF /* DependenciesEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependenciesEngine.swift; sourceTree = "<group>"; };
+		B1B17EB12666ECB300E19AE5 /* NewTastingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTastingViewController.swift; sourceTree = "<group>"; };
+		B1B17EB32666ECBB00E19AE5 /* NewTastingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTastingPresenter.swift; sourceTree = "<group>"; };
+		B1B17EB52666ECCD00E19AE5 /* NewTastingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTastingInteractor.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B172251E26788EB000914EB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B172252626788EB000914EB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B172252A26788EB000914EB2 /* WinearDataSource.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B192E106265D93B000E254FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B172253626788EB000914EB2 /* WinearDataSource.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B192E11C265D93B100E254FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B1365D202662707F007ECEDC /* TastingDetails */ = {
+			isa = PBXGroup;
+			children = (
+				B1365D212662709C007ECEDC /* TastingDetailsViewController.swift */,
+			);
+			path = TastingDetails;
+			sourceTree = "<group>";
+		};
+		B172252226788EB000914EB2 /* WinearDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				B172253F26788EBE00914EB2 /* Services */,
+				B172252326788EB000914EB2 /* WinearDataSource.h */,
+				B172252426788EB000914EB2 /* Info.plist */,
+			);
+			path = WinearDataSource;
+			sourceTree = "<group>";
+		};
+		B172252F26788EB000914EB2 /* WinearDataSourceTests */ = {
+			isa = PBXGroup;
+			children = (
+				B172253026788EB000914EB2 /* WinearDataSourceTests.swift */,
+				B172253226788EB000914EB2 /* Info.plist */,
+			);
+			path = WinearDataSourceTests;
+			sourceTree = "<group>";
+		};
+		B172253F26788EBE00914EB2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B172254026788EC900914EB2 /* Tasting */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B172254026788EC900914EB2 /* Tasting */ = {
+			isa = PBXGroup;
+			children = (
+				B172254226788EDE00914EB2 /* TastingService.swift */,
+				B172254426788F6100914EB2 /* TastingDTO.swift */,
+			);
+			path = Tasting;
+			sourceTree = "<group>";
+		};
+		B192E100265D93B000E254FF = {
+			isa = PBXGroup;
+			children = (
+				B192E10B265D93B000E254FF /* Winear */,
+				B192E122265D93B100E254FF /* WinearTests */,
+				B172252226788EB000914EB2 /* WinearDataSource */,
+				B172252F26788EB000914EB2 /* WinearDataSourceTests */,
+				B192E10A265D93B000E254FF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B192E10A265D93B000E254FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B192E109265D93B000E254FF /* Winear.app */,
+				B192E11F265D93B100E254FF /* WinearTests.xctest */,
+				B172252126788EB000914EB2 /* WinearDataSource.framework */,
+				B172252926788EB000914EB2 /* WinearDataSourceTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B192E10B265D93B000E254FF /* Winear */ = {
+			isa = PBXGroup;
+			children = (
+				B1365D1D26624DC1007ECEDC /* Winear.entitlements */,
+				B192E169265E320500E254FF /* Commons */,
+				B192E13C265D93BE00E254FF /* Scenes */,
+				B192E10C265D93B000E254FF /* AppDelegate.swift */,
+				B192E10E265D93B000E254FF /* SceneDelegate.swift */,
+				B192E112265D93B000E254FF /* Main.storyboard */,
+				B192E115265D93B100E254FF /* Assets.xcassets */,
+				B192E117265D93B100E254FF /* LaunchScreen.storyboard */,
+				B192E11A265D93B100E254FF /* Info.plist */,
+			);
+			path = Winear;
+			sourceTree = "<group>";
+		};
+		B192E122265D93B100E254FF /* WinearTests */ = {
+			isa = PBXGroup;
+			children = (
+				B192E123265D93B100E254FF /* WinearTests.swift */,
+				B192E125265D93B100E254FF /* Info.plist */,
+			);
+			path = WinearTests;
+			sourceTree = "<group>";
+		};
+		B192E13C265D93BE00E254FF /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				B1B17EB02666EC9C00E19AE5 /* NewTasting */,
+				B1365D202662707F007ECEDC /* TastingDetails */,
+				B192E13D265D93C400E254FF /* Tasting */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		B192E13D265D93C400E254FF /* Tasting */ = {
+			isa = PBXGroup;
+			children = (
+				B192E14B265D944500E254FF /* TastingViewController.swift */,
+				B192E15A265D9C4E00E254FF /* TastingInteractor.swift */,
+				B192E15C265D9D2D00E254FF /* TastingPresenter.swift */,
+				B192E15E265D9E3700E254FF /* TastingViewModel.swift */,
+				B192E160265DA1DA00E254FF /* TastingRouter.swift */,
+				B1365D1B266244CB007ECEDC /* TastingWorker.swift */,
+				B172251A2677DF8D00914EB2 /* TastingViewCell.swift */,
+			);
+			path = Tasting;
+			sourceTree = "<group>";
+		};
+		B192E169265E320500E254FF /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				B192E16A265E321C00E254FF /* MainCoordinator.swift */,
+				B192E16C265E335000E254FF /* DependenciesEngine.swift */,
+				B1365D1E26626969007ECEDC /* Coordinator.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		B1B17EB02666EC9C00E19AE5 /* NewTasting */ = {
+			isa = PBXGroup;
+			children = (
+				B1B17EB12666ECB300E19AE5 /* NewTastingViewController.swift */,
+				B1B17EB32666ECBB00E19AE5 /* NewTastingPresenter.swift */,
+				B1B17EB52666ECCD00E19AE5 /* NewTastingInteractor.swift */,
+			);
+			path = NewTasting;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B172251C26788EB000914EB2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B172253326788EB000914EB2 /* WinearDataSource.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B172252026788EB000914EB2 /* WinearDataSource */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B172253D26788EB000914EB2 /* Build configuration list for PBXNativeTarget "WinearDataSource" */;
+			buildPhases = (
+				B172251C26788EB000914EB2 /* Headers */,
+				B172251D26788EB000914EB2 /* Sources */,
+				B172251E26788EB000914EB2 /* Frameworks */,
+				B172251F26788EB000914EB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WinearDataSource;
+			productName = WinearDataSource;
+			productReference = B172252126788EB000914EB2 /* WinearDataSource.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B172252826788EB000914EB2 /* WinearDataSourceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B172253E26788EB000914EB2 /* Build configuration list for PBXNativeTarget "WinearDataSourceTests" */;
+			buildPhases = (
+				B172252526788EB000914EB2 /* Sources */,
+				B172252626788EB000914EB2 /* Frameworks */,
+				B172252726788EB000914EB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B172252C26788EB000914EB2 /* PBXTargetDependency */,
+				B172252E26788EB000914EB2 /* PBXTargetDependency */,
+			);
+			name = WinearDataSourceTests;
+			productName = WinearDataSourceTests;
+			productReference = B172252926788EB000914EB2 /* WinearDataSourceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B192E108265D93B000E254FF /* Winear */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B192E133265D93B100E254FF /* Build configuration list for PBXNativeTarget "Winear" */;
+			buildPhases = (
+				B192E105265D93B000E254FF /* Sources */,
+				B192E106265D93B000E254FF /* Frameworks */,
+				B192E107265D93B000E254FF /* Resources */,
+				B172253826788EB000914EB2 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B172253526788EB000914EB2 /* PBXTargetDependency */,
+			);
+			name = Winear;
+			productName = Winear;
+			productReference = B192E109265D93B000E254FF /* Winear.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B192E11E265D93B100E254FF /* WinearTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B192E136265D93B100E254FF /* Build configuration list for PBXNativeTarget "WinearTests" */;
+			buildPhases = (
+				B192E11B265D93B100E254FF /* Sources */,
+				B192E11C265D93B100E254FF /* Frameworks */,
+				B192E11D265D93B100E254FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B192E121265D93B100E254FF /* PBXTargetDependency */,
+			);
+			name = WinearTests;
+			productName = WinearTests;
+			productReference = B192E11F265D93B100E254FF /* WinearTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B192E101265D93B000E254FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					B172252026788EB000914EB2 = {
+						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
+					};
+					B172252826788EB000914EB2 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = B192E108265D93B000E254FF;
+					};
+					B192E108265D93B000E254FF = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					B192E11E265D93B100E254FF = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = B192E108265D93B000E254FF;
+					};
+				};
+			};
+			buildConfigurationList = B192E104265D93B000E254FF /* Build configuration list for PBXProject "Winear" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B192E100265D93B000E254FF;
+			productRefGroup = B192E10A265D93B000E254FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B192E108265D93B000E254FF /* Winear */,
+				B192E11E265D93B100E254FF /* WinearTests */,
+				B172252026788EB000914EB2 /* WinearDataSource */,
+				B172252826788EB000914EB2 /* WinearDataSourceTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B172251F26788EB000914EB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B172252726788EB000914EB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B192E107265D93B000E254FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B192E119265D93B100E254FF /* LaunchScreen.storyboard in Resources */,
+				B192E116265D93B100E254FF /* Assets.xcassets in Resources */,
+				B192E114265D93B000E254FF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B192E11D265D93B100E254FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B172251D26788EB000914EB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B172254526788F6100914EB2 /* TastingDTO.swift in Sources */,
+				B172254326788EDE00914EB2 /* TastingService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B172252526788EB000914EB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B172253126788EB000914EB2 /* WinearDataSourceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B192E105265D93B000E254FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B192E16B265E321C00E254FF /* MainCoordinator.swift in Sources */,
+				B192E10D265D93B000E254FF /* AppDelegate.swift in Sources */,
+				B172251B2677DF8D00914EB2 /* TastingViewCell.swift in Sources */,
+				B1B17EB22666ECB300E19AE5 /* NewTastingViewController.swift in Sources */,
+				B192E10F265D93B000E254FF /* SceneDelegate.swift in Sources */,
+				B192E14C265D944500E254FF /* TastingViewController.swift in Sources */,
+				B1B17EB62666ECCD00E19AE5 /* NewTastingInteractor.swift in Sources */,
+				B1365D222662709C007ECEDC /* TastingDetailsViewController.swift in Sources */,
+				B192E15D265D9D2D00E254FF /* TastingPresenter.swift in Sources */,
+				B1365D1C266244CB007ECEDC /* TastingWorker.swift in Sources */,
+				B1B17EB42666ECBB00E19AE5 /* NewTastingPresenter.swift in Sources */,
+				B1365D1F26626969007ECEDC /* Coordinator.swift in Sources */,
+				B192E15B265D9C4E00E254FF /* TastingInteractor.swift in Sources */,
+				B192E161265DA1DA00E254FF /* TastingRouter.swift in Sources */,
+				B192E15F265D9E3700E254FF /* TastingViewModel.swift in Sources */,
+				B192E16D265E335000E254FF /* DependenciesEngine.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B192E11B265D93B100E254FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B192E124265D93B100E254FF /* WinearTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B172252C26788EB000914EB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B172252026788EB000914EB2 /* WinearDataSource */;
+			targetProxy = B172252B26788EB000914EB2 /* PBXContainerItemProxy */;
+		};
+		B172252E26788EB000914EB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B192E108265D93B000E254FF /* Winear */;
+			targetProxy = B172252D26788EB000914EB2 /* PBXContainerItemProxy */;
+		};
+		B172253526788EB000914EB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B172252026788EB000914EB2 /* WinearDataSource */;
+			targetProxy = B172253426788EB000914EB2 /* PBXContainerItemProxy */;
+		};
+		B192E121265D93B100E254FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B192E108265D93B000E254FF /* Winear */;
+			targetProxy = B192E120265D93B100E254FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B192E112265D93B000E254FF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B192E113265D93B000E254FF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B192E117265D93B100E254FF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B192E118265D93B100E254FF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B172253926788EB000914EB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = BC477APS74;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = WinearDataSource/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tondin.WinearDataSource;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B172253A26788EB000914EB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = BC477APS74;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = WinearDataSource/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tondin.WinearDataSource;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B172253B26788EB000914EB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MX6ZAWD435;
+				INFOPLIST_FILE = WinearDataSourceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tondin.WinearDataSourceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Winear.app/Winear";
+			};
+			name = Debug;
+		};
+		B172253C26788EB000914EB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MX6ZAWD435;
+				INFOPLIST_FILE = WinearDataSourceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tondin.WinearDataSourceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Winear.app/Winear";
+			};
+			name = Release;
+		};
+		B192E131265D93B100E254FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B192E132265D93B100E254FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B192E134265D93B100E254FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Winear/Winear.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BC477APS74;
+				INFOPLIST_FILE = Winear/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tondin.Winear;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B192E135265D93B100E254FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Winear/Winear.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BC477APS74;
+				INFOPLIST_FILE = Winear/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tondin.Winear;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B192E137265D93B100E254FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BC477APS74;
+				INFOPLIST_FILE = WinearTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tondin.WinearTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Winear.app/Winear";
+			};
+			name = Debug;
+		};
+		B192E138265D93B100E254FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BC477APS74;
+				INFOPLIST_FILE = WinearTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tondin.WinearTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Winear.app/Winear";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B172253D26788EB000914EB2 /* Build configuration list for PBXNativeTarget "WinearDataSource" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B172253926788EB000914EB2 /* Debug */,
+				B172253A26788EB000914EB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B172253E26788EB000914EB2 /* Build configuration list for PBXNativeTarget "WinearDataSourceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B172253B26788EB000914EB2 /* Debug */,
+				B172253C26788EB000914EB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B192E104265D93B000E254FF /* Build configuration list for PBXProject "Winear" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B192E131265D93B100E254FF /* Debug */,
+				B192E132265D93B100E254FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B192E133265D93B100E254FF /* Build configuration list for PBXNativeTarget "Winear" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B192E134265D93B100E254FF /* Debug */,
+				B192E135265D93B100E254FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B192E136265D93B100E254FF /* Build configuration list for PBXNativeTarget "WinearTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B192E137265D93B100E254FF /* Debug */,
+				B192E138265D93B100E254FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B192E101265D93B000E254FF /* Project object */;
+}
