@@ -12,7 +12,7 @@ class WinearDataSourceTests: XCTestCase {
     
     func test_GetTastings_Success() {
         let dataSource = TastingService()
-        let expect = expectation(description: "getting tastings work")
+        let expect = expectation(description: "getting tastings expectation")
         let result = dataSource.getTastings(20)
         switch result{
         case .success:

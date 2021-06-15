@@ -17,6 +17,7 @@ public class TastingService {
 
 extension TastingService: TastingServiceProtocol {
     public func getTastings(_ pageNumber: Int) -> Result<[TastingDTO], TastingServiceError> {
+        // TODO: getting data from storage
         let data = TastingDTO.getMock(pageNumber)
         if data.count > 0 {
             return .success(data)

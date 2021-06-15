@@ -47,7 +47,7 @@ extension MainCoordinator: Coordinator {
     func start() {
         if var vc: UIViewController & Coordinating = dependenciesEngine.resolve(type: TastingViewController.self) {
             vc.coordinator = self
-            navigationController?.pushViewController(vc, animated: false)
+            navigationController?.viewControllers = [vc]
         }
     }
 }
