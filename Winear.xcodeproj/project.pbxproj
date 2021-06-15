@@ -59,8 +59,6 @@
 		B172251A2677DF8D00914EB2 /* TastingViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastingViewCell.swift; sourceTree = "<group>"; };
 		B172252326788EB000914EB2 /* WinearDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WinearDataSource.h; sourceTree = "<group>"; };
 		B172252426788EB000914EB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B172253026788EB000914EB2 /* WinearDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinearDataSourceTests.swift; sourceTree = "<group>"; };
-		B172253226788EB000914EB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B172254226788EDE00914EB2 /* TastingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastingService.swift; sourceTree = "<group>"; };
 		B172254426788F6100914EB2 /* TastingDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastingDTO.swift; sourceTree = "<group>"; };
 		B192E109265D93B000E254FF /* Winear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Winear.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,15 +115,6 @@
 			path = WinearDataSource;
 			sourceTree = "<group>";
 		};
-		B172252F26788EB000914EB2 /* WinearDataSourceTests */ = {
-			isa = PBXGroup;
-			children = (
-				B172253026788EB000914EB2 /* WinearDataSourceTests.swift */,
-				B172253226788EB000914EB2 /* Info.plist */,
-			);
-			path = WinearDataSourceTests;
-			sourceTree = "<group>";
-		};
 		B172253F26788EBE00914EB2 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,7 +138,6 @@
 				B192E10B265D93B000E254FF /* Winear */,
 				B192E122265D93B100E254FF /* WinearTests */,
 				B172252226788EB000914EB2 /* WinearDataSource */,
-				B172252F26788EB000914EB2 /* WinearDataSourceTests */,
 				B192E10A265D93B000E254FF /* Products */,
 			);
 			sourceTree = "<group>";

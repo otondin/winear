@@ -7,7 +7,6 @@
 
 import XCTest
 @testable import Winear
-@testable import WinearDataSource
 
 class WinearTests: XCTestCase {
 
@@ -29,5 +28,19 @@ class WinearTests: XCTestCase {
         self.measure {
             // Put the code you want to measure the time of here.
         }
+    }
+    
+    func test_GetTastings_Success() {
+        let dataSource = TastingService()
+        let expect = expectation(description: "getting tastings expectation")
+        let result = dataSource.getTastings(20)
+        switch result{
+        case .success:
+            XCTAssertTrue(true)
+            expect.fulfill()
+        case .failure:
+            XCTAssertTrue(false)
+        }
+        waitForExpectations(timeout: 5, handler: nil)
     }
 }
