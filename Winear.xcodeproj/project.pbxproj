@@ -10,14 +10,9 @@
 		B1365D1C266244CB007ECEDC /* TastingWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1365D1B266244CB007ECEDC /* TastingWorker.swift */; };
 		B1365D1F26626969007ECEDC /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1365D1E26626969007ECEDC /* Coordinator.swift */; };
 		B1365D222662709C007ECEDC /* TastingDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1365D212662709C007ECEDC /* TastingDetailsViewController.swift */; };
+		B168E21926794D1C00EC37AC /* TastingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B172254226788EDE00914EB2 /* TastingService.swift */; };
+		B168E21A26794D1F00EC37AC /* TastingDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B172254426788F6100914EB2 /* TastingDTO.swift */; };
 		B172251B2677DF8D00914EB2 /* TastingViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B172251A2677DF8D00914EB2 /* TastingViewCell.swift */; };
-		B172252A26788EB000914EB2 /* WinearDataSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B172252126788EB000914EB2 /* WinearDataSource.framework */; };
-		B172253126788EB000914EB2 /* WinearDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B172253026788EB000914EB2 /* WinearDataSourceTests.swift */; };
-		B172253326788EB000914EB2 /* WinearDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = B172252326788EB000914EB2 /* WinearDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B172253626788EB000914EB2 /* WinearDataSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B172252126788EB000914EB2 /* WinearDataSource.framework */; };
-		B172253726788EB000914EB2 /* WinearDataSource.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B172252126788EB000914EB2 /* WinearDataSource.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B172254326788EDE00914EB2 /* TastingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B172254226788EDE00914EB2 /* TastingService.swift */; };
-		B172254526788F6100914EB2 /* TastingDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B172254426788F6100914EB2 /* TastingDTO.swift */; };
 		B192E10D265D93B000E254FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B192E10C265D93B000E254FF /* AppDelegate.swift */; };
 		B192E10F265D93B000E254FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B192E10E265D93B000E254FF /* SceneDelegate.swift */; };
 		B192E114265D93B000E254FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B192E112265D93B000E254FF /* Main.storyboard */; };
@@ -28,36 +23,12 @@
 		B192E15B265D9C4E00E254FF /* TastingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B192E15A265D9C4E00E254FF /* TastingInteractor.swift */; };
 		B192E15D265D9D2D00E254FF /* TastingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B192E15C265D9D2D00E254FF /* TastingPresenter.swift */; };
 		B192E15F265D9E3700E254FF /* TastingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B192E15E265D9E3700E254FF /* TastingViewModel.swift */; };
-		B192E161265DA1DA00E254FF /* TastingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B192E160265DA1DA00E254FF /* TastingRouter.swift */; };
 		B192E16B265E321C00E254FF /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B192E16A265E321C00E254FF /* MainCoordinator.swift */; };
 		B192E16D265E335000E254FF /* DependenciesEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B192E16C265E335000E254FF /* DependenciesEngine.swift */; };
 		B1B17EB22666ECB300E19AE5 /* NewTastingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B17EB12666ECB300E19AE5 /* NewTastingViewController.swift */; };
-		B1B17EB42666ECBB00E19AE5 /* NewTastingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B17EB32666ECBB00E19AE5 /* NewTastingPresenter.swift */; };
-		B1B17EB62666ECCD00E19AE5 /* NewTastingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B17EB52666ECCD00E19AE5 /* NewTastingInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B172252B26788EB000914EB2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B192E101265D93B000E254FF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B172252026788EB000914EB2;
-			remoteInfo = WinearDataSource;
-		};
-		B172252D26788EB000914EB2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B192E101265D93B000E254FF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B192E108265D93B000E254FF;
-			remoteInfo = Winear;
-		};
-		B172253426788EB000914EB2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B192E101265D93B000E254FF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B172252026788EB000914EB2;
-			remoteInfo = WinearDataSource;
-		};
 		B192E120265D93B100E254FF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B192E101265D93B000E254FF /* Project object */;
@@ -74,7 +45,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B172253726788EB000914EB2 /* WinearDataSource.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -87,10 +57,8 @@
 		B1365D1E26626969007ECEDC /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		B1365D212662709C007ECEDC /* TastingDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastingDetailsViewController.swift; sourceTree = "<group>"; };
 		B172251A2677DF8D00914EB2 /* TastingViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastingViewCell.swift; sourceTree = "<group>"; };
-		B172252126788EB000914EB2 /* WinearDataSource.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WinearDataSource.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B172252326788EB000914EB2 /* WinearDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WinearDataSource.h; sourceTree = "<group>"; };
 		B172252426788EB000914EB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B172252926788EB000914EB2 /* WinearDataSourceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WinearDataSourceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B172253026788EB000914EB2 /* WinearDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinearDataSourceTests.swift; sourceTree = "<group>"; };
 		B172253226788EB000914EB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B172254226788EDE00914EB2 /* TastingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastingService.swift; sourceTree = "<group>"; };
@@ -109,35 +77,16 @@
 		B192E15A265D9C4E00E254FF /* TastingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastingInteractor.swift; sourceTree = "<group>"; };
 		B192E15C265D9D2D00E254FF /* TastingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastingPresenter.swift; sourceTree = "<group>"; };
 		B192E15E265D9E3700E254FF /* TastingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastingViewModel.swift; sourceTree = "<group>"; };
-		B192E160265DA1DA00E254FF /* TastingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastingRouter.swift; sourceTree = "<group>"; };
 		B192E16A265E321C00E254FF /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		B192E16C265E335000E254FF /* DependenciesEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependenciesEngine.swift; sourceTree = "<group>"; };
 		B1B17EB12666ECB300E19AE5 /* NewTastingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTastingViewController.swift; sourceTree = "<group>"; };
-		B1B17EB32666ECBB00E19AE5 /* NewTastingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTastingPresenter.swift; sourceTree = "<group>"; };
-		B1B17EB52666ECCD00E19AE5 /* NewTastingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTastingInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B172251E26788EB000914EB2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B172252626788EB000914EB2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B172252A26788EB000914EB2 /* WinearDataSource.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B192E106265D93B000E254FF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B172253626788EB000914EB2 /* WinearDataSource.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,7 +111,6 @@
 		B172252226788EB000914EB2 /* WinearDataSource */ = {
 			isa = PBXGroup;
 			children = (
-				B172253F26788EBE00914EB2 /* Services */,
 				B172252326788EB000914EB2 /* WinearDataSource.h */,
 				B172252426788EB000914EB2 /* Info.plist */,
 			);
@@ -211,8 +159,6 @@
 			children = (
 				B192E109265D93B000E254FF /* Winear.app */,
 				B192E11F265D93B100E254FF /* WinearTests.xctest */,
-				B172252126788EB000914EB2 /* WinearDataSource.framework */,
-				B172252926788EB000914EB2 /* WinearDataSourceTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -220,6 +166,7 @@
 		B192E10B265D93B000E254FF /* Winear */ = {
 			isa = PBXGroup;
 			children = (
+				B172253F26788EBE00914EB2 /* Services */,
 				B1365D1D26624DC1007ECEDC /* Winear.entitlements */,
 				B192E169265E320500E254FF /* Commons */,
 				B192E13C265D93BE00E254FF /* Scenes */,
@@ -259,7 +206,6 @@
 				B192E15A265D9C4E00E254FF /* TastingInteractor.swift */,
 				B192E15C265D9D2D00E254FF /* TastingPresenter.swift */,
 				B192E15E265D9E3700E254FF /* TastingViewModel.swift */,
-				B192E160265DA1DA00E254FF /* TastingRouter.swift */,
 				B1365D1B266244CB007ECEDC /* TastingWorker.swift */,
 				B172251A2677DF8D00914EB2 /* TastingViewCell.swift */,
 			);
@@ -280,63 +226,13 @@
 			isa = PBXGroup;
 			children = (
 				B1B17EB12666ECB300E19AE5 /* NewTastingViewController.swift */,
-				B1B17EB32666ECBB00E19AE5 /* NewTastingPresenter.swift */,
-				B1B17EB52666ECCD00E19AE5 /* NewTastingInteractor.swift */,
 			);
 			path = NewTasting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		B172251C26788EB000914EB2 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B172253326788EB000914EB2 /* WinearDataSource.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
-		B172252026788EB000914EB2 /* WinearDataSource */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B172253D26788EB000914EB2 /* Build configuration list for PBXNativeTarget "WinearDataSource" */;
-			buildPhases = (
-				B172251C26788EB000914EB2 /* Headers */,
-				B172251D26788EB000914EB2 /* Sources */,
-				B172251E26788EB000914EB2 /* Frameworks */,
-				B172251F26788EB000914EB2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = WinearDataSource;
-			productName = WinearDataSource;
-			productReference = B172252126788EB000914EB2 /* WinearDataSource.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		B172252826788EB000914EB2 /* WinearDataSourceTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B172253E26788EB000914EB2 /* Build configuration list for PBXNativeTarget "WinearDataSourceTests" */;
-			buildPhases = (
-				B172252526788EB000914EB2 /* Sources */,
-				B172252626788EB000914EB2 /* Frameworks */,
-				B172252726788EB000914EB2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B172252C26788EB000914EB2 /* PBXTargetDependency */,
-				B172252E26788EB000914EB2 /* PBXTargetDependency */,
-			);
-			name = WinearDataSourceTests;
-			productName = WinearDataSourceTests;
-			productReference = B172252926788EB000914EB2 /* WinearDataSourceTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		B192E108265D93B000E254FF /* Winear */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B192E133265D93B100E254FF /* Build configuration list for PBXNativeTarget "Winear" */;
@@ -349,7 +245,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				B172253526788EB000914EB2 /* PBXTargetDependency */,
 			);
 			name = Winear;
 			productName = Winear;
@@ -383,14 +278,6 @@
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
-					B172252026788EB000914EB2 = {
-						CreatedOnToolsVersion = 12.5;
-						LastSwiftMigration = 1250;
-					};
-					B172252826788EB000914EB2 = {
-						CreatedOnToolsVersion = 12.5;
-						TestTargetID = B192E108265D93B000E254FF;
-					};
 					B192E108265D93B000E254FF = {
 						CreatedOnToolsVersion = 12.5;
 					};
@@ -415,27 +302,11 @@
 			targets = (
 				B192E108265D93B000E254FF /* Winear */,
 				B192E11E265D93B100E254FF /* WinearTests */,
-				B172252026788EB000914EB2 /* WinearDataSource */,
-				B172252826788EB000914EB2 /* WinearDataSourceTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B172251F26788EB000914EB2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B172252726788EB000914EB2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B192E107265D93B000E254FF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -456,41 +327,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B172251D26788EB000914EB2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B172254526788F6100914EB2 /* TastingDTO.swift in Sources */,
-				B172254326788EDE00914EB2 /* TastingService.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B172252526788EB000914EB2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B172253126788EB000914EB2 /* WinearDataSourceTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B192E105265D93B000E254FF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B192E16B265E321C00E254FF /* MainCoordinator.swift in Sources */,
 				B192E10D265D93B000E254FF /* AppDelegate.swift in Sources */,
+				B168E21A26794D1F00EC37AC /* TastingDTO.swift in Sources */,
 				B172251B2677DF8D00914EB2 /* TastingViewCell.swift in Sources */,
 				B1B17EB22666ECB300E19AE5 /* NewTastingViewController.swift in Sources */,
 				B192E10F265D93B000E254FF /* SceneDelegate.swift in Sources */,
 				B192E14C265D944500E254FF /* TastingViewController.swift in Sources */,
-				B1B17EB62666ECCD00E19AE5 /* NewTastingInteractor.swift in Sources */,
 				B1365D222662709C007ECEDC /* TastingDetailsViewController.swift in Sources */,
 				B192E15D265D9D2D00E254FF /* TastingPresenter.swift in Sources */,
 				B1365D1C266244CB007ECEDC /* TastingWorker.swift in Sources */,
-				B1B17EB42666ECBB00E19AE5 /* NewTastingPresenter.swift in Sources */,
 				B1365D1F26626969007ECEDC /* Coordinator.swift in Sources */,
+				B168E21926794D1C00EC37AC /* TastingService.swift in Sources */,
 				B192E15B265D9C4E00E254FF /* TastingInteractor.swift in Sources */,
-				B192E161265DA1DA00E254FF /* TastingRouter.swift in Sources */,
 				B192E15F265D9E3700E254FF /* TastingViewModel.swift in Sources */,
 				B192E16D265E335000E254FF /* DependenciesEngine.swift in Sources */,
 			);
@@ -507,21 +360,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B172252C26788EB000914EB2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B172252026788EB000914EB2 /* WinearDataSource */;
-			targetProxy = B172252B26788EB000914EB2 /* PBXContainerItemProxy */;
-		};
-		B172252E26788EB000914EB2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B192E108265D93B000E254FF /* Winear */;
-			targetProxy = B172252D26788EB000914EB2 /* PBXContainerItemProxy */;
-		};
-		B172253526788EB000914EB2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B172252026788EB000914EB2 /* WinearDataSource */;
-			targetProxy = B172253426788EB000914EB2 /* PBXContainerItemProxy */;
-		};
 		B192E121265D93B100E254FF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B192E108265D93B000E254FF /* Winear */;
@@ -549,103 +387,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		B172253926788EB000914EB2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = BC477APS74;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = WinearDataSource/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tondin.WinearDataSource;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B172253A26788EB000914EB2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = BC477APS74;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = WinearDataSource/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tondin.WinearDataSource;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B172253B26788EB000914EB2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MX6ZAWD435;
-				INFOPLIST_FILE = WinearDataSourceTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tondin.WinearDataSourceTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Winear.app/Winear";
-			};
-			name = Debug;
-		};
-		B172253C26788EB000914EB2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MX6ZAWD435;
-				INFOPLIST_FILE = WinearDataSourceTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tondin.WinearDataSourceTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Winear.app/Winear";
-			};
-			name = Release;
-		};
 		B192E131265D93B100E254FF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -855,24 +596,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B172253D26788EB000914EB2 /* Build configuration list for PBXNativeTarget "WinearDataSource" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B172253926788EB000914EB2 /* Debug */,
-				B172253A26788EB000914EB2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B172253E26788EB000914EB2 /* Build configuration list for PBXNativeTarget "WinearDataSourceTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B172253B26788EB000914EB2 /* Debug */,
-				B172253C26788EB000914EB2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		B192E104265D93B000E254FF /* Build configuration list for PBXProject "Winear" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

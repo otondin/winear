@@ -6,22 +6,29 @@
 //
 
 import Foundation
-import WinearDataSource
 
 protocol TastingWorkerProtocol {
-    func getTastings(request: TastingRequest, completion: (Result<TastingResponse, Error>) -> Void)
+    func getTastings(request: TastingRequest, completion: (Result<TastingResponse, TastingServiceError>) -> Void)
 }
 
 final class TastingWorker {
-    private let dataSource: TastingServiceProtocol
-    
-    init(dataSource: TastingService) {
-        self.dataSource = TastingService()
+    init() {
+        setupDependencies()
+    }
+}
+
+private extension TastingWorker {
+    func setupDependencies() {
+        DependenciesEngine.shared.register(type: TastingService.self, component: TastingService())
     }
 }
 
 extension TastingWorker: TastingWorkerProtocol {
-    func getTastings(request: TastingRequest, completion: (Result<TastingResponse, Error>) -> Void) {
+    func getTastings(request: TastingRequest, completion: (Result<TastingResponse, TastingServiceError>) -> Void) {
+        guard let dataSource = DependenciesEngine.shared.resolve(type: TastingService.self) else {
+            completion(.failure(.other))
+            return
+        }
         let result = dataSource.getTastings(20)
         switch result {
         case .success(let data):

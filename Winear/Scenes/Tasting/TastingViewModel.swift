@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import WinearDataSource
 
 public struct TastingRequest {
     let pageNumber: Int

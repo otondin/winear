@@ -1,13 +1,15 @@
 //
 //  TastingDTO.swift
-//  WinearDataSource
+//  Winear
 //
-//  Created by Gabriel Tondin on 15/06/2021.
+//  Created by Gabriel Tondin on 26/05/2021.
 //
 
 import Foundation
 
-public struct TastingDTO: Codable {
+public protocol Representable {}
+
+public struct TastingDTO: Codable, Representable {
     public let id: Int
     public let title: String
     

@@ -16,7 +16,7 @@ protocol TastingInteractorOutput {
 
 class TastingInteractor {
     var presenter: TastingPresenterInput?
-    var worker : TastingWorkerProtocol?
+    var worker: TastingWorkerProtocol?
 }
 
 extension TastingInteractor: TastingInteractorInput {

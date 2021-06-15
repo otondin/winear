@@ -1,13 +1,13 @@
 //
 //  TastingService.swift
-//  WinearDataSource
+//  Winear
 //
-//  Created by Gabriel Tondin on 15/06/2021.
+//  Created by Gabriel Tondin on 26/05/2021.
 //
 
 import Foundation
 
-public protocol TastingServiceProtocol {
+public protocol TastingServiceProtocol: AnyObject {
     func getTastings(_ pageNumber: Int) -> Result<[TastingDTO], TastingServiceError>
 }
 
@@ -17,7 +17,7 @@ public class TastingService {
 
 extension TastingService: TastingServiceProtocol {
     public func getTastings(_ pageNumber: Int) -> Result<[TastingDTO], TastingServiceError> {
-        // TODO: getting data from storage
+        // TODO: getting data from storage, instead of mock
         let data = TastingDTO.getMock(pageNumber)
         if data.count > 0 {
             return .success(data)

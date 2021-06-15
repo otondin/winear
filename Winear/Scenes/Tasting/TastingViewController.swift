@@ -18,7 +18,6 @@ protocol TastingViewControllerOutput: AnyObject {
 
 class TastingViewController: UITableViewController, Coordinating {
     var interactor: TastingInteractorInput?
-    var router: TastingRouterProtocol?
     var coordinator: Coordinator?
     var viewModel: TastingViewModel?
     let cellIdentiier = "tastingCell"
@@ -45,9 +44,9 @@ private extension TastingViewController {
         let viewController = self
         let presenter = TastingPresenter()
         let interactor = TastingInteractor()
-        let router = TastingRouter()
-        router.viewController = viewController
+        let worker = TastingWorker()
         viewController.interactor = interactor
+        interactor.worker = worker
         interactor.presenter = presenter
         presenter.viewController = viewController
     }
@@ -80,7 +79,6 @@ extension TastingViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentiier) as? TastingViewCell {
-
             if let tastings = viewModel?.tasgings {
                 let tasting = tastings[indexPath.row]
                 cell.textLabel?.text = tasting.title
@@ -107,6 +105,7 @@ private extension TastingViewController {
     }
     
     @objc func didTapSyncTastings() {
+        // TODO: adding an activity indicator while waiting for tastings being synced
         getTastings()
     }
 }
