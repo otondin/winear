@@ -57,8 +57,6 @@
 		B1365D1E26626969007ECEDC /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		B1365D212662709C007ECEDC /* TastingDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastingDetailsViewController.swift; sourceTree = "<group>"; };
 		B172251A2677DF8D00914EB2 /* TastingViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastingViewCell.swift; sourceTree = "<group>"; };
-		B172252326788EB000914EB2 /* WinearDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WinearDataSource.h; sourceTree = "<group>"; };
-		B172252426788EB000914EB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B172254226788EDE00914EB2 /* TastingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastingService.swift; sourceTree = "<group>"; };
 		B172254426788F6100914EB2 /* TastingDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastingDTO.swift; sourceTree = "<group>"; };
 		B192E109265D93B000E254FF /* Winear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Winear.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,15 +104,6 @@
 			path = TastingDetails;
 			sourceTree = "<group>";
 		};
-		B172252226788EB000914EB2 /* WinearDataSource */ = {
-			isa = PBXGroup;
-			children = (
-				B172252326788EB000914EB2 /* WinearDataSource.h */,
-				B172252426788EB000914EB2 /* Info.plist */,
-			);
-			path = WinearDataSource;
-			sourceTree = "<group>";
-		};
 		B172253F26788EBE00914EB2 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,7 +126,6 @@
 			children = (
 				B192E10B265D93B000E254FF /* Winear */,
 				B192E122265D93B100E254FF /* WinearTests */,
-				B172252226788EB000914EB2 /* WinearDataSource */,
 				B192E10A265D93B000E254FF /* Products */,
 			);
 			sourceTree = "<group>";
